@@ -1,0 +1,305 @@
+html, body {
+  background: #f0f2f5;
+  font-family: 'Segoe UI', sans-serif;
+  height: 100%;
+  margin: 0;
+  padding: 0;
+}
+
+.sidebar {
+  width: 220px;
+  background: #2b2b3d;
+  color: #fff;
+  padding: 20px;
+  display: flex;
+  flex-direction: column;
+  justify-content: flex-start
+  align-items: center;
+  height: 100vh;
+}
+
+.sidebar h3 {
+    margin-top: 0;
+}
+
+.sidebar a {
+    display: block;
+    color: #ccc;
+    text-decoration: none;
+    margin: 8px 0;
+}
+
+.sidebar a:hover {
+    color: #fff;
+}
+
+.main {
+    flex-grow: 1;
+    padding: 20px;
+    display: flex;
+    flex-direction: column;
+}
+
+.chat-box {
+    flex-grow: 1;
+    background: #fff;
+    padding: 15px;
+    border-radius: 8px;
+    overflow-y: auto;
+    margin-bottom: 10px;
+}
+
+.message-bubble {
+    padding: 10px 15px;
+    margin: 8px 0;
+    border-radius: 20px;
+    display: inline-block;
+    max-width: 70%;
+    word-wrap: break-word;
+}
+
+.you {
+    background: #3a7bd5;
+    color: #fff;
+    float: right;
+    clear: both;
+}
+
+.friend {
+    background: #4bd5a0;
+    color: #fff;
+    float: left;
+    clear: both;
+}
+
+.timestamp {
+    font-size: 10px;
+    color: #999;
+    margin-top: 4px;
+    text-align: right;
+}
+
+#message-form {
+    display: flex;
+    gap: 10px;
+}
+
+#message-form input {
+    flex: 1;
+    padding: 10px;
+    border-radius: 20px;
+    border: 1px solid #ccc;
+}
+
+#message-form button {
+    padding: 10px 20px;
+    border-radius: 20px;
+    border: none;
+    background: #3a7bd5;
+    color: #fff;
+}
+
+#message-form button:hover {
+    background: #2a5fac;
+}
+
+#typing-status {
+    font-size: 12px;
+    color: #555;
+    margin-bottom: 5px;
+}
+
+.user-inline {
+  display: flex;
+  align-items: center;
+  background: #fff;
+  padding: 10px 15px;
+  border-bottom: 1px solid #eee;
+}
+
+.user-pic-small {
+  width: 50px;
+  height: 50px;
+  border-radius: 50%;
+  object-fit: cover;
+  margin-right: 10px;
+}
+
+.user-info {
+  flex-grow: 1;
+}
+
+.user-name {
+  font-weight: bold;
+  color: #2f3542;
+}
+
+.user-username {
+  font-size: 12px;
+  color: #888;
+}
+
+.user-actions button {
+  padding: 6px 10px;
+  border: none;
+  border-radius: 5px;
+  margin-left: 5px;
+  cursor: pointer;
+}
+
+.add-friend-btn {
+  background: #1e90ff;
+  color: #fff;
+}
+
+.accept-btn {
+  background: #2ed573;
+  color: #fff;
+}
+
+.block-btn {
+  background: #ff4757;
+  color: #fff;
+}
+
+.auth-container {
+  max-width: 400px;
+  margin: 60px auto;
+  background: #fff;
+  padding: 30px 25px;
+  border-radius: 10px;
+  box-shadow: 0 8px 30px rgba(0,0,0,0.1);
+  text-align: center;
+}
+
+.auth-container h2 {
+  margin-bottom: 20px;
+  color: #333;
+}
+
+.auth-container form {
+  display: flex;
+  flex-direction: column;
+}
+
+.auth-container input {
+  padding: 12px 15px;
+  margin: 10px 0;
+  border: 1px solid #ccc;
+  border-radius: 6px;
+  font-size: 14px;
+}
+
+.auth-container input:focus {
+  border-color: #1e90ff;
+  outline: none;
+  box-shadow: 0 0 5px rgba(30,144,255,0.3);
+}
+
+.auth-container button {
+  padding: 12px 15px;
+  border: none;
+  border-radius: 6px;
+  background: #1e90ff;
+  color: #fff;
+  font-size: 16px;
+  font-weight: bold;
+  cursor: pointer;
+  margin-top: 10px;
+}
+
+.auth-container button:hover {
+  background: #006de1;
+}
+
+.error {
+  color: #ff4757;
+  font-weight: bold;
+  margin-bottom: 10px;
+}
+
+.success {
+  color: #2ed573;
+  font-weight: bold;
+  margin-bottom: 10px;
+}
+
+.switch-link {
+  margin-top: 15px;
+  font-size: 14px;
+}
+
+.switch-link a {
+  color: #1e90ff;
+  text-decoration: none;
+}
+
+.switch-link a:hover {
+  text-decoration: underline;
+}
+
+.post-card {
+  background: #fff;
+  max-width: 500px;
+  margin: 20px auto;
+  border-radius: 8px;
+  box-shadow: 0 4px 15px rgba(0,0,0,0.1);
+  overflow: hidden;
+}
+
+.post-header {
+  display: flex;
+  align-items: center;
+  padding: 10px 15px;
+}
+
+.post-profile-pic {
+  width: 40px;
+  height: 40px;
+  border-radius: 50%;
+  object-fit: cover;
+  margin-right: 10px;
+}
+
+.post-username {
+  font-weight: bold;
+  color: #2f3542;
+}
+
+.post-image {
+  width: 100%;
+  display: block;
+}
+
+.post-description {
+  padding: 10px 15px;
+  color: #333;
+  font-size: 14px;
+  text-align: left;
+}
+
+.post-actions {
+  padding: 10px 15px;
+  display: flex;
+  gap: 10px;
+}
+
+.post-actions button {
+  padding: 6px 10px;
+  border: none;
+  border-radius: 5px;
+  background: #1e90ff;
+  color: #fff;
+  cursor: pointer;
+}
+
+.post-actions button:hover {
+  background: #006de1;
+}
+
+.post-time {
+  padding: 0 15px 10px;
+  color: #999;
+  font-size: 12px;
+  text-align: right;
+}
